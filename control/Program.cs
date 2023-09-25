@@ -17,3 +17,14 @@ for(int i=0; i<count; i++)
         size++;
     }
 }
+string[] array2 = new string[size];
+int index=0;
+for(int i=0; i<count; i++)
+{
+    if(array1[i].Length<=3)
+    {
+        array2[index]=array1[i];
+        index++;
+    }
+}
+Console.WriteLine("[" + String.Join(", ", array2) + "]");
