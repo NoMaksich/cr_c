@@ -9,3 +9,11 @@ for(int i=0; i<count; i++)
     array1[i] = Console.ReadLine();
 }
 Console.WriteLine("[" + String.Join(", ", array1) + "]");
+int size=0;
+for(int i=0; i<count; i++)
+{
+    if(array1[i].Length<=3)
+    {
+        size++;
+    }
+}
